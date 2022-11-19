@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use(router)
 
-const PORT = process.env.NODE_ENV == 'production' ? process.env.PORT : 5000
+const PORT = 5000
 const HOST = process.env.NODE_ENV == 'production' ? '0.0.0.0' : 'localhost'
 
 app.listen(PORT, HOST, () => {
